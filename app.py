@@ -19,7 +19,7 @@ MAIN_FB_DOMAIN = 'https://mbasic.facebook.com'
 LOGIN_URL = MAIN_FB_DOMAIN+'/login.php'
 DEFAULT_TIMEOUT = 2 # request timeout in seconds
 USER_AGENTS = []
-with open('user-agents.txt', 'rt', newline='', encoding='utf-8') as file:
+with open('user.txt', 'rt', newline='', encoding='utf-8') as file:
     USER_AGENTS = file.read().splitlines()
 PROXIES = []
 with open('proxies.txt', 'rt', newline='', encoding='utf-8') as file:
@@ -205,4 +205,5 @@ def main(args=None):
     print("")
 
 if __name__ == '__main__':
+
     sys.exit(main(args()))
