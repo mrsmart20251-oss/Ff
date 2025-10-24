@@ -22,7 +22,7 @@ USER_AGENTS = []
 with open('user.txt', 'rt', newline='', encoding='utf-8') as file:
     USER_AGENTS = file.read().splitlines()
 PROXIES = []
-with open('proxies.txt', 'rt', newline='', encoding='utf-8') as file:
+with open('http.txt', 'rt', newline='', encoding='utf-8') as file:
     PROXIES = file.read().splitlines()
 PAYLOAD = {}
 COOKIES = {}
@@ -207,3 +207,4 @@ def main(args=None):
 if __name__ == '__main__':
 
     sys.exit(main(args()))
+
